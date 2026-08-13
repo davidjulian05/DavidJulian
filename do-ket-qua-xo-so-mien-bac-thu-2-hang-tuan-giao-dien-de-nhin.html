@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Ryan - Profile & Data Analysis Blog</title>
+    <meta name="description" content="Trang cá nhân và blog chia sẻ thông tin dữ liệu, phân tích chuỗi thời gian của Michael Ryan.">
+    <style>
+        :root {
+            --primary: #1a237e;
+            --accent: #d32f2f;
+            --secondary: #1976d2;
+            --text: #333333;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        .hero-banner {
+            width: 100%;
+            height: 220px;
+            background: url('https://sf-static.upanhlaylink.com/img/image_20260726aaf93bd474644a756108ac0cc69e81a6.jpg') center/cover no-repeat;
+        }
+        .hero-avatar-wrapper {
+            max-width: 1000px;
+            margin: -60px auto 0;
+            padding: 0 20px;
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            object-fit: cover;
+            background: #fff;
+        }
+        .profile-title h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        .profile-title p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .main-wrapper {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .main-wrapper { grid-template-columns: 1fr; }
+            .hero-avatar-wrapper { flex-direction: column; align-items: center; text-align: center; margin-top: -60px; }
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .post-card {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .post-card:last-child { border-bottom: none; }
+        .post-title { font-size: 1.15rem; font-weight: 600; }
+        .post-title a { color: #222; text-decoration: none; }
+        .post-title a:hover { color: var(--secondary); }
+        .post-meta { font-size: 0.85rem; color: #888; margin: 5px 0 10px; }
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="./index.html" class="logo">Michael Ryan</a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Trang Chủ</a></li>
+                <li><a href="./blog/index.html">Blog Tin Tức</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-banner"></div>
+    <div class="hero-avatar-wrapper">
+        <img src="https://sf-static.upanhlaylink.com/img/image_202607261c8d6960ceb42bfd8c12dcca8ec28928.jpg" alt="Michael Ryan" class="avatar">
+        <div class="profile-title">
+            <h1>Michael Ryan</h1>
+            <p>Data Analysis & Time-series Specialist</p>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <main>
+            <section class="card">
+                <h2 class="section-title">📌 Về tôi (About Me)</h2>
+                <p style="margin-bottom: 12px; text-align: justify;">Chào bạn, tôi là Michael Ryan. Trong công tác quản lý dữ liệu thông tin, việc đối chiếu số liệu theo dòng thời gian (Time-series analysis) giúp chúng ta có một cái nhìn sâu sắc và toàn diện về tính ổn định của hệ thống.</p>
+                <p style="text-align: justify;">Đối với thông tin xổ số kiến thiết, việc so sánh kết quả của các kỳ quay thưởng trước đó của cùng một đài là nhu cầu thực tế của nhiều người xem. Đồng hành cùng Xổ Số Đại Phát, tôi xin hướng dẫn bạn cách sử dụng tính năng so sánh liên kỳ một cách nhanh chóng và chính xác.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="section-title">📰 Bài Viết Mới Nhất</h2>
+                <div class="post-card">
+                    <h3 class="post-title"><a href="./blog/do-ket-qua-xo-so-mien-bac-thu-2-hang-tuan-giao-dien-de-nhin.html">Dò kết quả Xổ số Miền Bắc Thứ 2 hàng tuần, giao diện dễ nhìn</a></h3>
+                    <div class="post-meta">Chuyên mục: Xổ số Miền Bắc | Ngày đăng: 13/08/2026</div>
+                    <p>Hướng dẫn chi tiết lịch mở thưởng, cơ cấu giải thưởng và giao diện tra cứu kết quả XSMB Thứ 2 mượt mà, tiện lợi...</p>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3 class="section-title">ℹ️ Thông tin cá nhân</h3>
+                <p><strong>Lĩnh vực:</strong> Phân tích dữ liệu & Tối ưu hóa trải nghiệm người dùng.</p>
+                <p style="margin-top: 10px;"><strong>Dự án:</strong> Xổ số kiến thiết, Phân tích chuỗi thời gian.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2026 Michael Ryan. Hosted on GitHub Pages.
+    </footer>
+
+</body>
+</html>
