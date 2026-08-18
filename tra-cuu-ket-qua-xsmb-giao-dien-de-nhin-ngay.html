@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tra cứu Kết quả Xổ số Miền Bắc giao diện dễ nhìn</title>
+    <meta name="description" content="Hướng dẫn tra cứu kết quả Xổ số miền Bắc với giao diện tối giản, dễ nhìn. Cập nhật lịch quay thưởng, cơ cấu giải thưởng và mẹo tra cứu tiện lợi trên điện thoại.">
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #1976d2;
+            --text-color: #333333;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0 0 30px 0;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a237e;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #777777;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.35;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #1a237e;
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            margin: 25px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
+        figcaption {
+            font-size: 0.9rem;
+            color: #666666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Feature & Related Links Box */
+        .related-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid var(--secondary-color);
+            padding: 16px 20px;
+            margin: 30px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .related-box h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #0d47a1;
+        }
+        .related-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        .related-box li {
+            margin-bottom: 8px;
+        }
+        .related-box a {
+            color: #0d47a1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px;
+                margin-top: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="https://davidjulian05.github.io/DavidJulian/index.html" class="logo">David Julian</a>
+            <ul class="nav-links">
+                <li><a href="https://davidjulian05.github.io/DavidJulian/index.html">Trang Chủ</a></li>
+                <li><a href="https://davidjulian05.github.io/DavidJulian/blog/index.html" class="active">Tin Tức</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="https://davidjulian05.github.io/DavidJulian/index.html">Trang chủ</a> &raquo; 
+            <span>Kinh nghiệm xổ số</span>
+        </div>
+
+        <h1>Hướng dẫn tra cứu Kết quả Xổ số Miền Bắc giao diện dễ nhìn & chính xác</h1>
+
+        <p>Chào mừng anh chị đã quay trở lại với không gian cập nhật tin tức xổ số kiến thiết truyền thống. Trong nhịp sống hiện đại, việc tra cứu kết quả xổ số không chỉ đơn thuần là xem những dãy số mà còn là một trải nghiệm số hóa cần sự mượt mà và tiện lợi. Một giao diện dễ nhìn, tinh gọn sẽ giúp anh chị tiết kiệm thời gian, bảo vệ đôi mắt và dễ dàng nắm bắt thông tin quan trọng ngay lập tức. Bài viết này sẽ hướng dẫn anh chị cách theo dõi kết quả Xổ số miền Bắc hay <a href="https://xosothienphu.vn/xsmb-sxmb-kqxsmb-xo-so-mien-bac.html" target="_blank" rel="noopener">xổ số hà nội</a> một cách chuyên nghiệp nhất, đảm bảo tính minh bạch và đúng quy định của pháp luật.</p>
+
+        <figure>
+            <img src="https://sf-static.upanhlaylink.com/img/image_2026081899c3b420dca82aa4a182b0077af7a4db.jpg" alt="Trải nghiệm tra cứu kết quả xổ số miền Bắc trực tuyến - Nguồn ảnh: Internet">
+            <figcaption>Nguồn ảnh: Internet</figcaption>
+        </figure>
+
+        <h2>KHUNG GIỜ QUAY THƯỞNG VÀ ĐỊA ĐIỂM TỔ CHỨC XỔ SỐ MIỀN BẮC</h2>
+
+        <p>Xổ số miền Bắc hay còn gọi là Xổ số Thủ đô, từ lâu đã trở thành một nét văn hóa giải trí lành mạnh của người dân. Để việc tra cứu không bị gián đoạn, anh chị cần ghi nhớ khung giờ vàng quay thưởng diễn ra hàng ngày. Chương trình quay số mở thưởng trực tiếp sẽ bắt đầu từ 18h10 và kết thúc vào khoảng 18h35. Toàn bộ quá trình này đều do Hội đồng Xổ số kiến thiết miền Bắc phát hành chung và tổ chức tại duy nhất một địa điểm trường quay tại số 53E Hàng Bài, phường Cửa Nam, thành phố Hà Nội. Việc nắm rõ thời gian và địa điểm giúp anh chị hoàn toàn yên tâm về tính công khai và minh bạch của loại hình giải trí ích nước lợi nhà này.</p>
+
+        <h3>Lịch mở thưởng chi tiết theo từng ngày trong tuần</h3>
+        <p>Mặc dù kết quả được quay chung tại một hội trường duy nhất, nhưng mỗi ngày trong tuần sẽ do một tỉnh thành khác nhau trong khu vực phía Bắc chịu trách nhiệm phát hành vé. Việc nắm lịch giúp anh chị dễ dàng đối soát tờ vé số đang cầm trên tay có khớp với ngày quay thưởng hay không.</p>
+
+        <ul>
+            <li><strong>Thứ Hai:</strong> Vé được phát hành tại Hà Nội</li>
+            <li><strong>Thứ Ba:</strong> Vé được phát hành tại Quảng Ninh</li>
+            <li><strong>Thứ Tư:</strong> Vé được phát hành tại Bắc Ninh</li>
+            <li><strong>Thứ Năm:</strong> Vé được phát hành tại Hà Nội</li>
+            <li><strong>Thứ Sáu:</strong> Vé được phát hành tại Hải Phòng</li>
+            <li><strong>Thứ Bảy:</strong> Vé được phát hành tại Nam Định</li>
+            <li><strong>Chủ Nhật:</strong> Vé được phát hành tại Thái Bình</li>
+        </ul>
+
+        <figure>
+            <img src="https://sf-static.upanhlaylink.com/img/image_202608180e4b70a1702d26309802dc393e53303f.jpg" alt="Xố số miền Bắc ngày 18/08/2026 - Nguồn ảnh: Xổ số Thiên Phú">
+            <figcaption>Xố số miền Bắc ngày 18/08/2026 - Nguồn ảnh: Xổ số Thiên Phú</figcaption>
+        </figure>
+
+        <h2>CƠ CẤU GIẢI THƯỞNG XỔ SỐ MIỀN BẮC MỚI NHẤT</h2>
+
+        <p>Xổ số miền Bắc sử dụng loại vé mệnh giá 10.000 VNĐ với bộ số gồm 5 chữ số và kèm theo mã ký hiệu riêng biệt. Với tổng cộng 27 lần quay thưởng, cơ cấu giải thưởng của miền Bắc vô cùng đa dạng, tạo điều kiện cho nhiều người tham gia có cơ hội nhận thưởng. Anh chị có thể cập nhật nhanh chóng, chuẩn xác và tiện lợi tại trang web Xổ số Thiên Phú để đối chiếu với các hạng giải sau đây.</p>
+
+        <h3>Danh sách các hạng giải và giá trị tiền thưởng</h3>
+
+        <ol>
+            <li><strong>Giải Đặc biệt:</strong> Có 8 giải vào ngày Mùng 01 Âm lịch và 6 giải vào các ngày khác, mỗi giải trị giá 500.000.000 VNĐ.</li>
+            <li><strong>Giải Phụ Đặc biệt:</strong> Có 12 giải vào ngày Mùng 01 Âm lịch và 9 giải vào các ngày khác, mỗi giải trị giá 25.000.000 VNĐ.</li>
+            <li><strong>Giải Nhất:</strong> Có 15 giải, mỗi giải trị giá 10.000.000 VNĐ.</li>
+            <li><strong>Giải Nhì:</strong> Có 30 giải, mỗi giải trị giá 5.000.000 VNĐ.</li>
+            <li><strong>Giải Ba:</strong> Có 90 giải, mỗi giải trị giá 1.000.000 VNĐ.</li>
+            <li><strong>Giải Tư:</strong> Có 600 giải, mỗi giải trị giá 400.000 VNĐ.</li>
+            <li><strong>Giải Năm:</strong> Có 900 giải, mỗi giải trị giá 200.000 VNĐ.</li>
+            <li><strong>Giải Sáu:</strong> Có 4.500 giải, mỗi giải trị giá 100.000 VNĐ.</li>
+            <li><strong>Giải Bảy:</strong> Có 60.000 giải, mỗi giải trị giá 40.000 VNĐ.</li>
+            <li><strong>Giải Khuyến Khích:</strong> Có 15.000 giải, mỗi giải trị giá 40.000 VNĐ.</li>
+        </ol>
+
+        <h2>TỐI ƯU TRẢI NGHIỆM TRA CỨU TRÊN GIAO DIỆN SỐ HIỆN ĐẠI</h2>
+
+        <p>Đối với những anh chị thường xuyên sử dụng điện thoại thông minh để dò số, một giao diện thiết kế tối giản chính là ưu tiên hàng đầu. Khi truy cập vào hệ thống tra cứu hiện đại, anh chị sẽ cảm nhận được sự khác biệt ngay từ tốc độ tải trang cực mượt. Hình ảnh bảng kết quả được trình bày rõ ràng, font chữ to và dễ nhìn, giúp anh chị không bị lầm lẫn giữa các con số ngay cả trong điều kiện ánh sáng yếu. Các tính năng chạm và lướt được tối ưu hóa để anh chị có thể tra cứu <a href="https://xosothienphu.vn/tra-cuu-xsmb-30-ngay.html" target="_blank" rel="noopener">xsmb 30 ngày</a> gần nhất chỉ với một cái gạt tay.</p>
+
+        <h3>Cách tra cứu kết quả trên điện thoại thông minh</h3>
+
+        <ol>
+            <li><strong>Bước một:</strong> Mở trình duyệt web trên điện thoại của anh chị và truy cập vào địa chỉ website uy tín.</li>
+            <li><strong>Bước hai:</strong> Tại trang chủ, anh chị chọn mục kết quả miền Bắc để xem thông tin quay thưởng mới nhất.</li>
+            <li><strong>Bước ba:</strong> Sử dụng thao tác cuộn để theo dõi từng hạng giải từ Giải Bảy đến Giải Đặc biệt.</li>
+            <li><strong>Bước bốn:</strong> Nếu muốn xem kết quả các ngày trước đó, anh chị chỉ cần chọn vào phần lịch ngày tháng tích hợp ngay phía trên bảng kết quả.</li>
+        </ol>
+
+        <p>Việc tham gia mua vé số kiến thiết truyền thống không chỉ là một hình thức giải trí mà còn đóng góp quan trọng vào ngân sách nhà nước. Nguồn thu từ hoạt động này được dùng để đóng góp phát triển y tế, giáo dục và các công trình phúc lợi xã hội tại các địa phương. Vì vậy, mỗi tờ vé số anh chị sở hữu đều mang thông điệp ích nước lợi nhà sâu sắc. Hãy luôn duy trì thói quen tra cứu tại các nền tảng chính thống để đảm bảo quyền lợi cá nhân và tận hưởng trải nghiệm dịch vụ số tốt nhất.</p>
+
+        <p>Nếu anh chị cần bất kỳ thông tin hỗ trợ nào về thủ tục nhận thưởng hoặc địa chỉ công ty, có thể liên hệ trực tiếp tại Công ty Xổ số kiến thiết Thủ Đô có trụ sở tại số 53E Hàng Bài, phường Cửa Nam, thành phố Hà Nội. Đây là địa chỉ tin cậy để giải đáp mọi thắc mắc liên quan đến hoạt động xổ số tại khu vực miền Bắc.</p>
+
+        <p>Đừng quên truy cập thường xuyên vào website Xổ số Thiên Phú để không bỏ lỡ các buổi quay thưởng trực tiếp diễn ra từ 18h10 đến 18h35 mỗi ngày và cập nhật theo thời gian trực tiếp từ trường quay một cách dễ dàng nhất.</p>
+
+        <!-- Feature Xem bài viết liên quan -->
+        <div class="related-box">
+            <h3>Bài viết liên quan & Xem thêm:</h3>
+            <ul>
+                <li>
+                    <a href="https://davidjulian05.github.io/DavidJulian/do-ket-qua-xo-so-mien-bac-thu-2-hang-tuan-giao-dien-de-nhin.html" target="_blank">Dò kết quả Xổ số Miền Bắc Thứ 2 hàng tuần, giao diện dễ nhìn</a>
+                </li>
+                <li>
+                    <a href="https://telegra.ph/Tam-quan-trong-cua-giao-dien-de-nhin-khi-xem-ket-qua-xo-so-mien-Bac-thu-3-07-08" target="_blank" rel="noopener">Tầm quan trọng của giao diện dễ nhìn khi xem kết quả xổ số miền Bắc thứ 3</a>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2026 David Julian. Hosted on GitHub Pages.
+        </footer>
+    </article>
+</body>
+</html>
